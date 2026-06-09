@@ -1,0 +1,9 @@
+# TouchGrass — https://touchgrass.app
+# Allow all crawlers full access
+
+User-agent: *
+Allow: /
+Disallow:
+
+# Sitemap location
+Sitemap: https://touchgrass.app/sitemap.xml
