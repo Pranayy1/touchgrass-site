@@ -8,7 +8,7 @@
   <meta name="description" content="TouchGrass is a free, open-source Windows app that tracks your app usage, blocks distractions, and helps you focus with a built-in Pomodoro timer and breathing exercises.">
   <meta name="keywords" content="screen time tracker, Windows focus app, Pomodoro timer, digital wellbeing, app usage tracker, breathing exercises, free open source">
   <meta name="author" content="TouchGrass">
-  <meta name="theme-color" content="#3a7234">
+  <meta name="theme-color" content="#7CD106">
 
   <!-- ===== Canonical & Language ===== -->
   <link rel="canonical" href="https://touchgrass.app/">
@@ -20,8 +20,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <!-- ===== Favicon & Touch Icons ===== -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
-  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="assets/icon.png">
+  <link rel="apple-touch-icon" href="assets/icon.png">
 
   <!-- ===== Open Graph ===== -->
   <meta property="og:type" content="website">
@@ -72,7 +72,7 @@
   <noscript><link rel="stylesheet" href="styles/main.css"></noscript>
 
   <!-- ===== Critical CSS (inlined & minified) ===== -->
-  <style>*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}:root{--green-900:#1a3a1a;--green-800:#234d23;--green-700:#2d5a27;--green-600:#3a7234;--green-500:#4a8c3f;--green-400:#5da651;--green-300:#7bc96f;--green-200:#a8e09c;--green-100:#d4f0ce;--green-50:#edf8ea;--charcoal:#1a1a2e;--dark:#232336;--gray-800:#3a3a4e;--gray-600:#6b6b80;--gray-400:#9e9eb0;--gray-200:#d1d1dc;--gray-100:#e8e8ef;--off-white:#f5f2eb;--cream:#faf8f4;--white:#fff;--amber:#d4a04a;--amber-light:#f0d48a;--bg-primary:var(--cream);--bg-section-alt:var(--off-white);--text-primary:var(--charcoal);--text-secondary:var(--gray-600);--text-muted:var(--gray-400);--border-color:var(--gray-200);--font-sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;--font-mono:'JetBrains Mono','Cascadia Code',monospace;--section-padding:120px 0;--container-max:1140px;--container-padding:0 24px;--radius-sm:8px;--radius-md:12px;--radius-lg:20px;--radius-xl:28px;--radius-full:9999px;--shadow-sm:0 1px 3px rgba(26,26,46,.06);--shadow-md:0 4px 16px rgba(26,26,46,.08);--shadow-lg:0 8px 32px rgba(26,26,46,.10);--shadow-xl:0 16px 48px rgba(26,26,46,.12);--shadow-green:0 8px 32px rgba(74,140,63,.25);--ease-out:cubic-bezier(.16,1,.3,1);--transition-fast:.2s var(--ease-out);--transition-base:.35s var(--ease-out);--transition-slow:.6s var(--ease-out)}html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-size:16px}body{font-family:var(--font-sans);color:var(--text-primary);background:var(--bg-primary);line-height:1.7;overflow-x:hidden}img{max-width:100%;display:block}a{text-decoration:none;color:inherit}button{border:none;cursor:pointer;font-family:inherit}.container{max-width:var(--container-max);margin:0 auto;padding:var(--container-padding)}.reveal{opacity:0;transform:translateY(32px);transition:opacity .7s var(--ease-out),transform .7s var(--ease-out)}.reveal.visible{opacity:1;transform:translateY(0)}.reveal-delay-1{transition-delay:.1s}.reveal-delay-2{transition-delay:.2s}.reveal-delay-3{transition-delay:.3s}.reveal-delay-4{transition-delay:.4s}body.loading{opacity:0}body.loaded{opacity:1;transition:opacity .6s ease}.site-header{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 0;transition:background var(--transition-base),box-shadow var(--transition-base),padding var(--transition-base)}.site-header.scrolled{background:rgba(250,248,244,.92);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:var(--shadow-sm);padding:10px 0}.nav-inner{display:flex;align-items:center;justify-content:space-between}.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.35rem;color:var(--green-700)}.logo-icon{width:36px;height:36px;background:var(--green-500);border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.1rem}.nav-links{display:flex;align-items:center;gap:32px;list-style:none}.nav-links a{font-size:.9rem;font-weight:500;color:var(--text-secondary);transition:color var(--transition-fast);position:relative}.nav-cta{background:var(--green-600);color:#fff!important;padding:10px 22px;border-radius:var(--radius-full);font-weight:600;font-size:.875rem}.nav-toggle{display:none;flex-direction:column;gap:5px;background:none;padding:4px}.nav-toggle span{width:24px;height:2px;background:var(--charcoal);border-radius:2px}.hero{padding:160px 0 100px;position:relative;overflow:hidden}.hero-inner{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}.hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--green-50);border:1px solid var(--green-200);color:var(--green-700);padding:6px 16px;border-radius:var(--radius-full);font-size:.8rem;font-weight:600;margin-bottom:24px;letter-spacing:.02em}.hero h1{font-size:clamp(2.4rem,5vw,3.5rem);font-weight:800;line-height:1.12;color:var(--charcoal);margin-bottom:20px;letter-spacing:-.03em}.hero h1 .accent{color:var(--green-600);position:relative}.hero-subtitle{font-size:1.15rem;color:var(--text-secondary);line-height:1.75;margin-bottom:36px;max-width:520px}.hero-actions{display:flex;align-items:center;gap:16px;flex-wrap:wrap}.btn-primary{display:inline-flex;align-items:center;gap:10px;background:var(--green-600);color:#fff;padding:16px 32px;border-radius:var(--radius-full);font-weight:700;font-size:1rem;transition:background var(--transition-fast),transform var(--transition-fast),box-shadow var(--transition-fast);box-shadow:var(--shadow-green)}.btn-secondary{display:inline-flex;align-items:center;gap:8px;background:transparent;color:var(--text-secondary);padding:16px 24px;border-radius:var(--radius-full);font-weight:600;font-size:.95rem;border:1.5px solid var(--border-color)}.hero-image{display:flex;justify-content:center;position:relative}.hero-image img{width:100%;max-width:520px;border-radius:var(--radius-lg);filter:drop-shadow(0 20px 60px rgba(26,26,46,.10))}.hero-stats{display:flex;gap:40px;margin-top:48px;padding-top:32px;border-top:1px solid var(--border-color)}.hero-stat-value{font-size:1.5rem;font-weight:800;color:var(--green-700)}.hero-stat-label{font-size:.8rem;color:var(--text-muted);margin-top:2px;font-weight:500}@media(max-width:768px){.nav-links{display:none}.nav-toggle{display:flex}.hero{padding:120px 0 80px}.hero-inner{grid-template-columns:1fr;gap:48px;text-align:center}.hero-subtitle{margin-left:auto;margin-right:auto}.hero-actions{justify-content:center}.hero-stats{justify-content:center}.hero-image{order:-1}}@media(max-width:480px){.hero h1{font-size:2rem}.hero-actions{flex-direction:column;width:100%}.btn-primary,.btn-secondary{width:100%;justify-content:center}}</style>
+  <style>*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}:root{--green-900:#1e3500;--green-800:#2d4f00;--green-700:#3d6a00;--green-600:#569400;--green-500:#6bb804;--green-400:#7CD106;--green-300:#96de3e;--green-200:#b8ea7a;--green-100:#daf5b8;--green-50:#f0fbe0;--charcoal:#1a1a2e;--dark:#232336;--gray-800:#3a3a4e;--gray-600:#6b6b80;--gray-400:#9e9eb0;--gray-200:#d1d1dc;--gray-100:#e8e8ef;--off-white:#f5f5f0;--cream:#fafaf6;--white:#fff;--amber:#d4a04a;--amber-light:#f0d48a;--bg-primary:var(--cream);--bg-section-alt:var(--off-white);--text-primary:var(--charcoal);--text-secondary:var(--gray-600);--text-muted:var(--gray-400);--border-color:var(--gray-200);--font-sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;--font-mono:'JetBrains Mono','Cascadia Code',monospace;--section-padding:120px 0;--container-max:1140px;--container-padding:0 24px;--radius-sm:8px;--radius-md:12px;--radius-lg:20px;--radius-xl:28px;--radius-full:9999px;--shadow-sm:0 1px 3px rgba(26,26,46,.06);--shadow-md:0 4px 16px rgba(26,26,46,.08);--shadow-lg:0 8px 32px rgba(26,26,46,.10);--shadow-xl:0 16px 48px rgba(26,26,46,.12);--shadow-green:0 8px 32px rgba(124,209,6,.30);--ease-out:cubic-bezier(.16,1,.3,1);--transition-fast:.2s var(--ease-out);--transition-base:.35s var(--ease-out);--transition-slow:.6s var(--ease-out)}html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-size:16px}body{font-family:var(--font-sans);color:var(--text-primary);background:var(--bg-primary);line-height:1.7;overflow-x:hidden}img{max-width:100%;display:block}a{text-decoration:none;color:inherit}button{border:none;cursor:pointer;font-family:inherit}.container{max-width:var(--container-max);margin:0 auto;padding:var(--container-padding)}.reveal{opacity:0;transform:translateY(32px);transition:opacity .7s var(--ease-out),transform .7s var(--ease-out)}.reveal.visible{opacity:1;transform:translateY(0)}.reveal-delay-1{transition-delay:.1s}.reveal-delay-2{transition-delay:.2s}.reveal-delay-3{transition-delay:.3s}.reveal-delay-4{transition-delay:.4s}body.loading{opacity:0}body.loaded{opacity:1;transition:opacity .6s ease}.site-header{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 0;transition:background var(--transition-base),box-shadow var(--transition-base),padding var(--transition-base)}.site-header.scrolled{background:rgba(250,250,246,.92);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:var(--shadow-sm);padding:10px 0}.nav-inner{display:flex;align-items:center;justify-content:space-between}.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.35rem;color:var(--green-700)}.logo-icon-img{width:36px;height:36px;border-radius:var(--radius-sm);object-fit:contain}.nav-links{display:flex;align-items:center;gap:32px;list-style:none}.nav-links a{font-size:.9rem;font-weight:500;color:var(--text-secondary);transition:color var(--transition-fast);position:relative}.nav-cta{background:var(--green-600);color:#fff!important;padding:10px 22px;border-radius:var(--radius-full);font-weight:600;font-size:.875rem}.nav-toggle{display:none;flex-direction:column;gap:5px;background:none;padding:4px}.nav-toggle span{width:24px;height:2px;background:var(--charcoal);border-radius:2px}.hero{padding:160px 0 100px;position:relative;overflow:hidden}.hero-inner{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}.hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--green-50);border:1px solid var(--green-200);color:var(--green-700);padding:6px 16px;border-radius:var(--radius-full);font-size:.8rem;font-weight:600;margin-bottom:24px;letter-spacing:.02em}.hero h1{font-size:clamp(2.4rem,5vw,3.5rem);font-weight:800;line-height:1.12;color:var(--charcoal);margin-bottom:20px;letter-spacing:-.03em}.hero h1 .accent{color:var(--green-600);position:relative}.hero-subtitle{font-size:1.15rem;color:var(--text-secondary);line-height:1.75;margin-bottom:36px;max-width:520px}.hero-actions{display:flex;align-items:center;gap:16px;flex-wrap:wrap}.btn-primary{display:inline-flex;align-items:center;gap:10px;background:var(--green-600);color:#fff;padding:16px 32px;border-radius:var(--radius-full);font-weight:700;font-size:1rem;transition:background var(--transition-fast),transform var(--transition-fast),box-shadow var(--transition-fast);box-shadow:var(--shadow-green)}.btn-secondary{display:inline-flex;align-items:center;gap:8px;background:transparent;color:var(--text-secondary);padding:16px 24px;border-radius:var(--radius-full);font-weight:600;font-size:.95rem;border:1.5px solid var(--border-color)}.hero-image{display:flex;justify-content:center;position:relative}.hero-image img{width:100%;max-width:520px;border-radius:var(--radius-lg);filter:drop-shadow(0 20px 60px rgba(26,26,46,.10))}.hero-stats{display:flex;gap:40px;margin-top:48px;padding-top:32px;border-top:1px solid var(--border-color)}.hero-stat-value{font-size:1.5rem;font-weight:800;color:var(--green-700)}.hero-stat-label{font-size:.8rem;color:var(--text-muted);margin-top:2px;font-weight:500}@media(max-width:768px){.nav-links{display:none}.nav-toggle{display:flex}.hero{padding:120px 0 80px}.hero-inner{grid-template-columns:1fr;gap:48px;text-align:center}.hero-subtitle{margin-left:auto;margin-right:auto}.hero-actions{justify-content:center}.hero-stats{justify-content:center}.hero-image{order:-1}}@media(max-width:480px){.hero h1{font-size:2rem}.hero-actions{flex-direction:column;width:100%}.btn-primary,.btn-secondary{width:100%;justify-content:center}}</style>
 </head>
 <body class="loading">
 
@@ -81,7 +81,7 @@
     <div class="container">
       <nav class="nav-inner" aria-label="Main navigation">
         <a href="#" class="logo" aria-label="TouchGrass Home">
-          <span class="logo-icon">🌿</span>
+          <img src="assets/icon.png" alt="TouchGrass" class="logo-icon-img">
           TouchGrass
         </a>
 
@@ -209,21 +209,70 @@
             Screenshots
           </div>
           <h2 class="section-title">See TouchGrass in action</h2>
-          <p class="section-desc">A clean, distraction-free interface that puts your wellbeing front and center.</p>
+          <p class="section-desc">A clean, distraction-free interface that puts your wellbeing front and center. Click any screenshot to zoom in.</p>
         </div>
 
-        <div class="screenshots-grid">
-          <div class="screenshot-slot reveal" id="screenshot-1">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-            <span>Dashboard Screenshot</span>
-          </div>
-          <div class="screenshot-slot reveal reveal-delay-1" id="screenshot-2">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-            <span>Focus Timer Screenshot</span>
-          </div>
-          <div class="screenshot-slot reveal reveal-delay-2" id="screenshot-3">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-            <span>Analytics Screenshot</span>
+        <div class="screenshots-carousel reveal">
+          <div class="screenshots-track">
+            <figure class="screenshot-item" id="screenshot-1">
+              <div class="screenshot-frame" data-lightbox="assets/screenshot/homepage.png" data-caption="App Usage Dashboard — See your daily screen time at a glance with real-time app tracking, usage bars, and a quick-access breathing prompt." role="button" tabindex="0" aria-label="Zoom into App Usage Dashboard screenshot">
+                <img src="assets/screenshot/homepage.png"
+                     alt="TouchGrass app dashboard showing today's screen time summary, application usage bars with per-app tracking, a breathing exercise prompt, and the focus timer docked at the bottom"
+                     width="1316" height="892" loading="lazy">
+              </div>
+              <figcaption>App Usage Dashboard</figcaption>
+              <p class="screenshot-desc">See your daily screen time at a glance with real-time app tracking and usage bars.</p>
+            </figure>
+
+            <figure class="screenshot-item" id="screenshot-2">
+              <div class="screenshot-frame" data-lightbox="assets/screenshot/analytics-page.png" data-caption="Weekly Analytics — Dive into 7-day usage trends, daily averages, and your top 5 most-used applications ranked by percentage." role="button" tabindex="0" aria-label="Zoom into Weekly Analytics screenshot">
+                <img src="assets/screenshot/analytics-page.png"
+                     alt="TouchGrass analytics page displaying 7-day usage statistics, daily average screen time, most and least used days, and top 5 apps ranked by usage percentage"
+                     width="1316" height="892" loading="lazy">
+              </div>
+              <figcaption>Weekly Analytics</figcaption>
+              <p class="screenshot-desc">Dive into 7-day usage trends, daily averages, and your top 5 most-used apps.</p>
+            </figure>
+
+            <figure class="screenshot-item" id="screenshot-3">
+              <div class="screenshot-frame" data-lightbox="assets/screenshot/breathing_excersice.png" data-caption="Mindful Breathing — A guided 60-second breathing exercise to help you relax and reset between work blocks." role="button" tabindex="0" aria-label="Zoom into Breathing Exercise screenshot">
+                <img src="assets/screenshot/breathing_excersice.png"
+                     alt="TouchGrass mindful breathing exercise dialog with a 60-second circular countdown timer and a Start Exercise button overlaid on the main dashboard"
+                     width="1316" height="892" loading="lazy">
+              </div>
+              <figcaption>Breathing Exercise</figcaption>
+              <p class="screenshot-desc">Guided 60-second breathing sessions to help you relax and reset between work blocks.</p>
+            </figure>
+
+            <figure class="screenshot-item" id="screenshot-4">
+              <div class="screenshot-frame" data-lightbox="assets/screenshot/timer_before_popout.png" data-caption="Focus Timer — A Pomodoro-style timer docked at the bottom of the app. Choose your duration and hit Start to begin a focused session." role="button" tabindex="0" aria-label="Zoom into Focus Timer screenshot">
+                <img src="assets/screenshot/timer_before_popout.png"
+                     alt="TouchGrass Pomodoro focus timer bar showing 25:00 countdown, duration selector, Start button, and Pop Out option docked at the bottom of the app"
+                     width="636" height="55" loading="lazy">
+              </div>
+              <figcaption>Focus Timer</figcaption>
+              <p class="screenshot-desc">Pomodoro-style timer with customizable durations — docked or popped out to stay on top.</p>
+            </figure>
+
+            <figure class="screenshot-item" id="screenshot-5">
+              <div class="screenshot-frame" data-lightbox="assets/screenshot/draggable_timer_popout.png" data-caption="Floating Timer — Pop the focus timer out into a sleek, always-on-top widget that you can drag anywhere on your screen." role="button" tabindex="0" aria-label="Zoom into Floating Timer screenshot">
+                <img src="assets/screenshot/draggable_timer_popout.png"
+                     alt="TouchGrass floating timer pop-out widget showing 24:44 countdown in a compact dark pill-shaped overlay with a close button"
+                     width="280" height="78" loading="lazy">
+              </div>
+              <figcaption>Floating Timer</figcaption>
+              <p class="screenshot-desc">Pop the timer out into a draggable, always-on-top widget while you work.</p>
+            </figure>
+
+            <figure class="screenshot-item" id="screenshot-6">
+              <div class="screenshot-frame" data-lightbox="assets/screenshot/setting-page.png" data-caption="Settings — Control tracking, startup behavior, system tray options, and notification preferences." role="button" tabindex="0" aria-label="Zoom into Settings screenshot">
+                <img src="assets/screenshot/setting-page.png"
+                     alt="TouchGrass settings page showing runtime settings for tracking engine toggle, launch on startup, hide on close, and hourly tray notification controls"
+                     width="1316" height="500" loading="lazy">
+              </div>
+              <figcaption>Settings</figcaption>
+              <p class="screenshot-desc">Control tracking, startup behavior, system tray options, and notifications.</p>
+            </figure>
           </div>
         </div>
       </div>
@@ -303,7 +352,7 @@
     <div class="container">
       <div class="footer-inner">
         <div class="footer-left">
-          <div class="footer-brand">🌿 TouchGrass</div>
+          <div class="footer-brand"><img src="assets/icon.png" alt="" width="22" height="22"> TouchGrass</div>
           <span class="footer-text">Made with Tauri + Rust · Free & Open Source</span>
         </div>
         <div class="footer-links">
@@ -318,6 +367,17 @@
       </div>
     </div>
   </footer>
+
+  <!-- ===== LIGHTBOX OVERLAY ===== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Screenshot preview" hidden>
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close preview">&times;</button>
+    <div class="lightbox-body">
+      <img class="lightbox-img" id="lightbox-img" src="" alt="">
+      <p class="lightbox-caption" id="lightbox-caption"></p>
+    </div>
+    <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous screenshot">&#8249;</button>
+    <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next screenshot">&#8250;</button>
+  </div>
 
   <script src="scripts/main.js" defer></script>
 </body>
