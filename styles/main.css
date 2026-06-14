@@ -6,16 +6,16 @@
 
 /* --- CSS Custom Properties --- */
 :root {
-  /* Lime Greens — built from #7CD106 */
-  --green-900: #1e3500;
-  --green-800: #2d4f00;
-  --green-700: #3d6a00;
-  --green-600: #569400;
-  --green-500: #6bb804;
-  --green-400: #7CD106;
-  --green-300: #96de3e;
-  --green-200: #b8ea7a;
-  --green-100: #daf5b8;
+  /* TouchGrass Greens — from brand palette */
+  --green-900: #1a3d12;
+  --green-800: #22571a;
+  --green-700: #294c32;
+  --green-600: #2e6a12;
+  --green-500: #4f8f23;
+  --green-400: #74b836;
+  --green-300: #7fca28;
+  --green-200: #83d909;
+  --green-100: #b8ea7a;
   --green-50:  #f0fbe0;
 
   /* Neutrals */
@@ -63,7 +63,7 @@
   --shadow-md: 0 4px 16px rgba(26,26,46,0.08);
   --shadow-lg: 0 8px 32px rgba(26,26,46,0.10);
   --shadow-xl: 0 16px 48px rgba(26,26,46,0.12);
-  --shadow-green: 0 8px 32px rgba(124,209,6,0.30);
+  --shadow-green: 0 8px 32px rgba(131,217,9,0.28);
 
   /* Transitions */
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
@@ -712,6 +712,94 @@ body.loaded {
 .download-sublink a:hover { color: white; }
 
 /* ========================================
+   FEEDBACK / BUG REPORT
+   ======================================== */
+.feedback {
+  padding: 0 0 100px;
+}
+
+.feedback-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 36px 40px;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--transition-base), border-color var(--transition-base);
+}
+.feedback-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--green-100);
+}
+
+.feedback-icon {
+  flex-shrink: 0;
+  width: 52px; height: 52px;
+  background: linear-gradient(135deg, var(--green-50), var(--green-100));
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--green-600);
+}
+
+.feedback-body h2 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--charcoal);
+  margin-bottom: 8px;
+}
+.feedback-body p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin-bottom: 20px;
+  max-width: 600px;
+}
+
+.feedback-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn-feedback {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: background var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+.btn-feedback:hover {
+  transform: translateY(-1px);
+}
+
+.btn-feedback--bug {
+  background: #fef2f2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+}
+.btn-feedback--bug:hover {
+  background: #fee2e2;
+  box-shadow: 0 4px 12px rgba(185,28,28,0.12);
+}
+
+.btn-feedback--feature {
+  background: var(--green-50);
+  color: var(--green-700);
+  border: 1px solid var(--green-100);
+}
+.btn-feedback--feature:hover {
+  background: var(--green-100);
+  box-shadow: 0 4px 12px rgba(79,143,35,0.12);
+}
+
+/* ========================================
    FOOTER
    ======================================== */
 .site-footer {
@@ -944,6 +1032,10 @@ body.loaded {
 
   .footer-inner { flex-direction: column; text-align: center; }
   .footer-left { flex-direction: column; }
+
+  .feedback-card { flex-direction: column; padding: 28px 24px; }
+  .feedback-actions { flex-direction: column; }
+  .btn-feedback { width: 100%; justify-content: center; }
 }
 
 @media (max-width: 480px) {
