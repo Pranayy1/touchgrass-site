@@ -4,11 +4,12 @@
   <!-- ===== Core Meta ===== -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Download TouchGrass — Choose Your Installer</title>
-  <meta name="description" content="Download TouchGrass for Windows. Choose between the NSIS (.exe) installer or the MSI (.msi) package — both free and open source.">
-  <meta name="keywords" content="TouchGrass download, Windows installer, exe download, msi download, screen time tracker download">
+  <title>Download TouchGrass — Free Screen Time Tracker for Windows</title>
+  <meta name="description" content="Download TouchGrass for Windows — a free, open-source screen time tracker. Choose between the NSIS (.exe) installer or the MSI (.msi) package.">
+  <meta name="keywords" content="TouchGrass download, Windows installer, exe download, msi download, screen time tracker download, digital wellbeing app">
   <meta name="author" content="TouchGrass">
   <meta name="theme-color" content="#7CD106">
+  <meta name="robots" content="index, follow">
 
   <!-- ===== Canonical ===== -->
   <link rel="canonical" href="https://touchgrass.app/download.html">
@@ -24,25 +25,79 @@
   <!-- ===== Open Graph ===== -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_US">
-  <meta property="og:title" content="Download TouchGrass — Choose Your Installer">
-  <meta property="og:description" content="Download TouchGrass for Windows. Choose between the NSIS (.exe) installer or the MSI (.msi) package.">
+  <meta property="og:title" content="Download TouchGrass — Free Screen Time Tracker for Windows">
+  <meta property="og:description" content="Download TouchGrass for Windows. Choose between the NSIS (.exe) installer or the MSI (.msi) package — both free and open source.">
   <meta property="og:image" content="https://touchgrass.app/assets/og-image.png">
   <meta property="og:url" content="https://touchgrass.app/download.html">
   <meta property="og:site_name" content="TouchGrass">
+
+  <!-- ===== Twitter Card ===== -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Download TouchGrass — Free Screen Time Tracker for Windows">
+  <meta name="twitter:description" content="Download TouchGrass for Windows. Choose between the NSIS (.exe) or MSI (.msi) installer — free and open source.">
+  <meta name="twitter:image" content="https://touchgrass.app/assets/og-image.png">
 
   <!-- ===== Font Preload ===== -->
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
   <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet"></noscript>
 
-  <!-- ===== Stylesheets ===== -->
-  <link rel="preload" href="styles/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="styles/main.css"></noscript>
-  <link rel="preload" href="styles/download.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="styles/download.css"></noscript>
+  <!-- ===== Stylesheets (render-blocking for no FOUC) ===== -->
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/download.css">
 
   <!-- ===== Critical CSS ===== -->
-  <style>*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}:root{--green-900:#1a3d12;--green-800:#22571a;--green-700:#294c32;--green-600:#2e6a12;--green-500:#4f8f23;--green-400:#74b836;--green-300:#7fca28;--green-200:#83d909;--green-100:#b8ea7a;--green-50:#f0fbe0;--charcoal:#1a1a2e;--dark:#232336;--gray-800:#3a3a4e;--gray-600:#6b6b80;--gray-400:#9e9eb0;--gray-200:#d1d1dc;--gray-100:#e8e8ef;--off-white:#f5f5f0;--cream:#fafaf6;--white:#fff;--amber:#d4a04a;--amber-light:#f0d48a;--bg-primary:var(--cream);--bg-section-alt:var(--off-white);--text-primary:var(--charcoal);--text-secondary:var(--gray-600);--text-muted:var(--gray-400);--border-color:var(--gray-200);--font-sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;--font-mono:'JetBrains Mono','Cascadia Code',monospace;--section-padding:120px 0;--container-max:1140px;--container-padding:0 24px;--radius-sm:8px;--radius-md:12px;--radius-lg:20px;--radius-xl:28px;--radius-full:9999px;--shadow-sm:0 1px 3px rgba(26,26,46,.06);--shadow-md:0 4px 16px rgba(26,26,46,.08);--shadow-lg:0 8px 32px rgba(26,26,46,.10);--shadow-xl:0 16px 48px rgba(26,26,46,.12);--shadow-green:0 8px 32px rgba(131,217,9,.28);--ease-out:cubic-bezier(.16,1,.3,1);--transition-fast:.2s var(--ease-out);--transition-base:.35s var(--ease-out);--transition-slow:.6s var(--ease-out)}html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-size:16px}body{font-family:var(--font-sans);color:var(--text-primary);background:var(--bg-primary);line-height:1.7;overflow-x:hidden}img{max-width:100%;display:block}a{text-decoration:none;color:inherit}button{border:none;cursor:pointer;font-family:inherit}.container{max-width:var(--container-max);margin:0 auto;padding:var(--container-padding)}body.loading{opacity:0}body.loaded{opacity:1;transition:opacity .6s ease}.site-header{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 0;transition:background var(--transition-base),box-shadow var(--transition-base),padding var(--transition-base)}.site-header.scrolled{background:rgba(250,250,246,.92);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:var(--shadow-sm);padding:10px 0}.nav-inner{display:flex;align-items:center;justify-content:space-between}.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.35rem;color:var(--green-700)}.logo-icon-img{width:36px;height:36px;border-radius:var(--radius-sm);object-fit:contain}.nav-links{display:flex;align-items:center;gap:32px;list-style:none}.nav-links a{font-size:.9rem;font-weight:500;color:var(--text-secondary);transition:color var(--transition-fast);position:relative}.nav-cta{background:var(--green-600);color:#fff!important;padding:10px 22px;border-radius:var(--radius-full);font-weight:600;font-size:.875rem}.nav-toggle{display:none;flex-direction:column;gap:5px;background:none;padding:4px}.nav-toggle span{width:24px;height:2px;background:var(--charcoal);border-radius:2px}</style>
+  <style>body.loading{opacity:0}body.loaded{opacity:1;transition:opacity .6s ease}</style>
+
+  <!-- ===== JSON-LD Structured Data ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "TouchGrass",
+    "operatingSystem": "Windows 10+",
+    "applicationCategory": "UtilitiesApplication",
+    "applicationSubCategory": "Digital Wellbeing",
+    "description": "A free, open-source screen time tracker that helps you build healthier digital habits.",
+    "url": "https://touchgrass.app/download.html",
+    "downloadUrl": "https://touchgrass.app/assets/setups/nsis/TouchGrass_0.1.0_x64-setup.exe",
+    "softwareVersion": "0.1.0",
+    "fileSize": "10MB",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "TouchGrass",
+      "url": "https://touchgrass.app"
+    },
+    "license": "https://github.com/Pranayy1/TouchGrass/blob/main/LICENSE"
+  }
+  </script>
+
+  <!-- ===== BreadcrumbList Structured Data ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://touchgrass.app/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Download",
+        "item": "https://touchgrass.app/download.html"
+      }
+    ]
+  }
+  </script>
 </head>
 <body class="loading">
 
@@ -51,7 +106,7 @@
     <div class="container">
       <nav class="nav-inner" aria-label="Main navigation">
         <a href="index.html" class="logo" aria-label="TouchGrass Home">
-          <img src="assets/icon.png" alt="TouchGrass" class="logo-icon-img">
+          <img src="assets/icon.png" alt="TouchGrass logo" class="logo-icon-img" width="36" height="36">
           TouchGrass
         </a>
 
@@ -62,16 +117,26 @@
           <li><a href="index.html" class="nav-cta">← Back to Home</a></li>
         </ul>
 
-        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
       </nav>
     </div>
   </header>
 
-  <main>
+  <!-- ===== Breadcrumb ===== -->
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <div class="container">
+      <ol class="breadcrumb-list">
+        <li><a href="index.html">Home</a></li>
+        <li aria-current="page">Download</li>
+      </ol>
+    </div>
+  </nav>
+
+  <main id="main-content">
     <!-- ===== DOWNLOAD HERO ===== -->
-    <section class="dl-hero" id="dl-hero">
+    <section class="dl-hero" id="dl-hero" aria-labelledby="dl-hero-heading">
       <div class="container">
         <div class="dl-hero-content">
           <!-- Animated background orbs -->
@@ -80,23 +145,23 @@
           <div class="dl-orb dl-orb-3" aria-hidden="true"></div>
 
           <div class="dl-badge">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
             Download TouchGrass
           </div>
 
-          <h1>Choose Your <span class="accent">Installer</span></h1>
+          <h1 id="dl-hero-heading">Choose Your <span class="accent">Installer</span></h1>
           <p class="dl-subtitle">
             Pick the format that works best for you. Both packages include the same full version of TouchGrass — completely free, no strings attached.
           </p>
         </div>
 
         <!-- ===== INSTALLER CARDS ===== -->
-        <div class="dl-cards">
+        <div class="dl-cards" role="list">
 
           <!-- EXE Card -->
-          <div class="dl-card" id="dl-card-exe">
+          <article class="dl-card" id="dl-card-exe" role="listitem">
             <div class="dl-card-badge dl-card-badge--recommended">Recommended</div>
-            <div class="dl-card-icon">
+            <div class="dl-card-icon" aria-hidden="true">
               <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
                 <polyline points="14 2 14 8 20 8"/>
@@ -109,30 +174,39 @@
               Traditional Windows installer with a setup wizard. Guides you through the installation step by step.
             </p>
 
-            <div class="dl-card-details">
+            <dl class="dl-card-details">
               <div class="dl-card-detail">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
-                <span>TouchGrass_0.1.0_x64-setup.exe</span>
+                <dt class="sr-only">Filename</dt>
+                <dd>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+                  <span>TouchGrass_0.1.0_x64-setup.exe</span>
+                </dd>
               </div>
               <div class="dl-card-detail">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><polyline points="8 12 12 16 16 12"/><line x1="12" y1="8" x2="12" y2="16"/></svg>
-                <span>Windows 10+ (64-bit)</span>
+                <dt class="sr-only">Platform</dt>
+                <dd>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><polyline points="8 12 12 16 16 12"/><line x1="12" y1="8" x2="12" y2="16"/></svg>
+                  <span>Windows 10+ (64-bit)</span>
+                </dd>
               </div>
               <div class="dl-card-detail">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
-                <span>Version 0.1.0</span>
+                <dt class="sr-only">Version</dt>
+                <dd>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+                  <span>Version 0.1.0</span>
+                </dd>
               </div>
-            </div>
+            </dl>
 
-            <a href="assets/setups/nsis/TouchGrass_0.1.0_x64-setup.exe" class="dl-card-btn dl-card-btn--primary" id="download-exe-btn" download>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <a href="assets/setups/nsis/TouchGrass_0.1.0_x64-setup.exe" class="dl-card-btn dl-card-btn--primary" id="download-exe-btn" download aria-label="Download TouchGrass EXE installer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
               Download .EXE
             </a>
-          </div>
+          </article>
 
           <!-- MSI Card -->
-          <div class="dl-card" id="dl-card-msi">
-            <div class="dl-card-icon">
+          <article class="dl-card" id="dl-card-msi" role="listitem">
+            <div class="dl-card-icon" aria-hidden="true">
               <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
                 <polyline points="14 2 14 8 20 8"/>
@@ -146,52 +220,61 @@
               Standard Windows Installer package. Ideal for system administrators and enterprise deployments with Group Policy.
             </p>
 
-            <div class="dl-card-details">
+            <dl class="dl-card-details">
               <div class="dl-card-detail">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
-                <span>TouchGrass_0.1.0_x64_en-US.msi</span>
+                <dt class="sr-only">Filename</dt>
+                <dd>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+                  <span>TouchGrass_0.1.0_x64_en-US.msi</span>
+                </dd>
               </div>
               <div class="dl-card-detail">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><polyline points="8 12 12 16 16 12"/><line x1="12" y1="8" x2="12" y2="16"/></svg>
-                <span>Windows 10+ (64-bit)</span>
+                <dt class="sr-only">Platform</dt>
+                <dd>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><polyline points="8 12 12 16 16 12"/><line x1="12" y1="8" x2="12" y2="16"/></svg>
+                  <span>Windows 10+ (64-bit)</span>
+                </dd>
               </div>
               <div class="dl-card-detail">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
-                <span>Version 0.1.0</span>
+                <dt class="sr-only">Version</dt>
+                <dd>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+                  <span>Version 0.1.0</span>
+                </dd>
               </div>
-            </div>
+            </dl>
 
-            <a href="assets/setups/msi/TouchGrass_0.1.0_x64_en-US.msi" class="dl-card-btn dl-card-btn--secondary" id="download-msi-btn" download>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <a href="assets/setups/msi/TouchGrass_0.1.0_x64_en-US.msi" class="dl-card-btn dl-card-btn--secondary" id="download-msi-btn" download aria-label="Download TouchGrass MSI package">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
               Download .MSI
             </a>
-          </div>
+          </article>
 
         </div>
 
         <!-- ===== HELP SECTION ===== -->
-        <div class="dl-help">
+        <aside class="dl-help" aria-label="Installation help">
           <div class="dl-help-card">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
             <div>
-              <h3>Not sure which to choose?</h3>
+              <h2 class="dl-help-title">Not sure which to choose?</h2>
               <p>For most users, we recommend the <strong>.EXE installer</strong> — it's the familiar "Next → Next → Finish" experience. The .MSI package is best for IT admins who need to deploy via Group Policy or SCCM.</p>
             </div>
           </div>
-        </div>
+        </aside>
 
         <!-- ===== BACK LINK ===== -->
-        <div class="dl-back">
+        <nav class="dl-back" aria-label="Page navigation">
           <a href="index.html" class="dl-back-link" id="back-home-btn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
             Back to homepage
           </a>
-          <span class="dl-back-divider">·</span>
+          <span class="dl-back-divider" aria-hidden="true">·</span>
           <a href="https://github.com/Pranayy1/TouchGrass" class="dl-back-link" target="_blank" rel="noopener noreferrer">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
             View on GitHub
           </a>
-        </div>
+        </nav>
 
       </div>
     </section>
@@ -205,15 +288,15 @@
           <div class="footer-brand"><img src="assets/icon.png" alt="" width="22" height="22"> TouchGrass</div>
           <span class="footer-text">Made with Tauri + Rust · Free & Open Source</span>
         </div>
-        <div class="footer-links">
+        <nav class="footer-links" aria-label="Footer navigation">
           <a href="https://github.com/Pranayy1/TouchGrass" target="_blank" rel="noopener noreferrer">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
             GitHub
           </a>
           <a href="https://github.com/Pranayy1/TouchGrass/releases/latest">
             Releases
           </a>
-        </div>
+        </nav>
       </div>
     </div>
   </footer>

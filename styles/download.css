@@ -2,12 +2,55 @@
    TouchGrass Download Page Styles
    ======================================== */
 
+/* --- Breadcrumb --- */
+.breadcrumb {
+  padding-top: 80px;
+  padding-bottom: 0;
+}
+
+.breadcrumb-list {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  padding: 12px 0;
+}
+
+.breadcrumb-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.breadcrumb-list li + li::before {
+  content: '›';
+  color: var(--gray-400);
+  font-size: 1rem;
+}
+
+.breadcrumb-list a {
+  color: var(--text-secondary);
+  font-weight: 500;
+  transition: color var(--transition-fast);
+}
+
+.breadcrumb-list a:hover {
+  color: var(--green-600);
+}
+
+.breadcrumb-list [aria-current="page"] {
+  color: var(--green-700);
+  font-weight: 600;
+}
+
 /* --- Download Hero --- */
 .dl-hero {
-  padding: 160px 0 80px;
+  padding: 40px 0 80px;
   position: relative;
   overflow: hidden;
-  min-height: 100vh;
+  min-height: calc(100vh - 80px);
   display: flex;
   align-items: flex-start;
 }
@@ -238,6 +281,14 @@
   color: var(--text-secondary);
   font-weight: 500;
 }
+.dl-card-detail dt {
+  /* sr-only handled by global class */
+}
+.dl-card-detail dd {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
 .dl-card-detail svg {
   flex-shrink: 0;
   color: var(--green-500);
@@ -246,6 +297,7 @@
   font-family: var(--font-mono);
   font-size: 0.75rem;
   word-break: break-all;
+  overflow-wrap: break-word;
 }
 
 /* --- Card Buttons --- */
@@ -265,6 +317,8 @@
               border-color var(--transition-fast);
   position: relative;
   overflow: hidden;
+  /* Ensure minimum tap target of 48px */
+  min-height: 48px;
 }
 
 .dl-card-btn::after {
@@ -289,6 +343,11 @@
   transform: translateY(-2px);
   box-shadow: 0 12px 40px rgba(74,140,63,0.35);
 }
+/* Active/touch state */
+.dl-card-btn--primary:active {
+  transform: translateY(0);
+  box-shadow: var(--shadow-green);
+}
 
 .dl-card-btn--secondary {
   background: transparent;
@@ -300,6 +359,10 @@
   border-color: var(--green-500);
   transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(74,140,63,0.15);
+}
+.dl-card-btn--secondary:active {
+  transform: translateY(0);
+  box-shadow: none;
 }
 
 .dl-card-btn svg {
@@ -345,7 +408,7 @@
   margin-top: 2px;
 }
 
-.dl-help-card h3 {
+.dl-help-title {
   font-size: 0.95rem;
   font-weight: 700;
   color: var(--charcoal);
@@ -379,6 +442,9 @@
   font-weight: 600;
   color: var(--text-secondary);
   transition: color var(--transition-fast);
+  /* Minimum tap target */
+  min-height: 44px;
+  padding: 8px 4px;
 }
 .dl-back-link:hover {
   color: var(--green-600);
@@ -390,28 +456,53 @@
 }
 
 /* ========================================
-   RESPONSIVE
+   RESPONSIVE — Tablet (≤ 768px)
    ======================================== */
 @media (max-width: 768px) {
-  .dl-hero {
-    padding: 120px 0 60px;
+  .breadcrumb {
+    padding-top: 68px;
   }
+
+  .dl-hero {
+    padding: 24px 0 60px;
+    min-height: auto;
+  }
+
+  .dl-hero-content {
+    margin-bottom: 40px;
+  }
+
   .dl-cards {
     grid-template-columns: 1fr;
-    max-width: 420px;
+    max-width: 480px;
+    gap: 20px;
   }
+
   .dl-card {
     padding: 32px 24px 28px;
   }
+
+  .dl-card-desc {
+    min-height: auto;
+  }
+
+  /* Disable hover transforms on touch devices */
+  .dl-card:hover {
+    transform: none;
+  }
+
   .dl-help-card {
     flex-direction: column;
     text-align: center;
     align-items: center;
+    padding: 20px;
   }
+
   .dl-back {
     flex-direction: column;
     gap: 8px;
   }
+
   .dl-back-divider {
     display: none;
   }
@@ -432,13 +523,180 @@
     border-bottom-left-radius: var(--radius-lg);
     border-bottom-right-radius: var(--radius-lg);
   }
+
+  /* Reduce orb sizes on mobile to prevent overflow */
+  .dl-orb-1 {
+    width: 280px; height: 280px;
+    top: -60px; right: -60px;
+  }
+  .dl-orb-2 {
+    width: 200px; height: 200px;
+    bottom: -40px; left: -40px;
+  }
+  .dl-orb-3 {
+    width: 150px; height: 150px;
+  }
 }
 
+/* ========================================
+   RESPONSIVE — Small phone (≤ 480px)
+   ======================================== */
 @media (max-width: 480px) {
+  .breadcrumb-list {
+    font-size: 0.75rem;
+  }
+
   .dl-hero h1 {
     font-size: 1.85rem;
   }
+
+  .dl-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .dl-badge {
+    font-size: 0.75rem;
+    padding: 6px 14px;
+  }
+
+  .dl-cards {
+    max-width: 100%;
+  }
+
+  .dl-card {
+    padding: 28px 20px 24px;
+  }
+
+  .dl-card-title {
+    font-size: 1.15rem;
+  }
+
   .dl-card-detail span {
-    font-size: 0.68rem;
+    font-size: 0.65rem;
+  }
+
+  .dl-card-btn {
+    padding: 14px 20px;
+    font-size: 0.88rem;
+  }
+
+  .dl-card-icon {
+    width: 60px; height: 60px;
+  }
+  .dl-card-icon svg {
+    width: 32px; height: 32px;
+  }
+
+  .dl-help-card p {
+    font-size: 0.8rem;
+  }
+}
+
+/* ========================================
+   RESPONSIVE — Very small (≤ 360px)
+   ======================================== */
+@media (max-width: 360px) {
+  .dl-hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .dl-card {
+    padding: 24px 16px 20px;
+  }
+
+  .dl-card-details {
+    padding: 12px;
+  }
+
+  .dl-card-detail span {
+    font-size: 0.6rem;
+  }
+}
+
+/* ========================================
+   TOUCH DEVICE OPTIMIZATIONS
+   ======================================== */
+@media (hover: none) and (pointer: coarse) {
+  /* Disable hover-only effects on touch devices */
+  .dl-card:hover {
+    transform: none;
+    box-shadow: var(--shadow-md);
+  }
+  .dl-card:hover::before {
+    opacity: 0;
+  }
+  .dl-card:hover .dl-card-icon {
+    transform: none;
+    background: var(--green-50);
+  }
+
+  /* Ensure active states work on touch */
+  .dl-card:active {
+    transform: scale(0.98);
+    border-color: var(--green-200);
+  }
+
+  .dl-card-btn--primary:hover {
+    transform: none;
+  }
+  .dl-card-btn--primary:active {
+    transform: scale(0.97);
+  }
+
+  .dl-card-btn--secondary:hover {
+    transform: none;
+  }
+  .dl-card-btn--secondary:active {
+    transform: scale(0.97);
+  }
+
+  /* Disable pulse animation on touch to save battery */
+  #dl-card-exe {
+    animation: none;
+    border-color: var(--green-200);
+  }
+}
+
+/* ========================================
+   REDUCED MOTION PREFERENCE
+   ======================================== */
+@media (prefers-reduced-motion: reduce) {
+  .dl-orb {
+    animation: none;
+  }
+  .dl-badge,
+  .dl-hero h1,
+  .dl-subtitle,
+  .dl-cards,
+  .dl-help,
+  .dl-back {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+  #dl-card-exe {
+    animation: none;
+  }
+  .dl-card {
+    transition: none;
+  }
+  .dl-card-btn {
+    transition: none;
+  }
+}
+
+/* ========================================
+   LANDSCAPE PHONE
+   ======================================== */
+@media (max-height: 500px) and (orientation: landscape) {
+  .dl-hero {
+    padding: 20px 0 40px;
+    min-height: auto;
+  }
+  .dl-hero-content {
+    margin-bottom: 32px;
+  }
+  .dl-cards {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
