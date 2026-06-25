@@ -165,7 +165,6 @@ For complete product requirements, architecture, feature planning, and implement
 - [ ] Add changelog / release notes page
 - [ ] Performance audit with Lighthouse CI
 - [ ] Add `<noscript>` fallback for CSS preload on the download page
-- [ ] Resolve version string mismatch between homepage (`v1.0.0`) and download page (`v0.1.0`)
 
 ---
 
