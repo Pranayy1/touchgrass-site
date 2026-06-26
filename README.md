@@ -10,6 +10,7 @@ Built with zero dependencies — just semantic HTML, vanilla CSS, and vanilla Ja
 
 - **Homepage** — Hero section, feature cards, screenshot gallery with lightbox, how-it-works steps, download CTA, and feedback/bug-report links
 - **Download Page** — Side-by-side installer cards (.EXE and .MSI) with 3D tilt micro-interaction, pulsing recommended badge, and help section
+- **Custom 404 Page** — Branded error page with animated background orbs, bouncing 🌿 emoji, gradient "404" text, and navigation links back to the homepage
 - **Fully Responsive** — Mobile-first breakpoints at 1024px, 768px, 480px, and 360px with hamburger nav, horizontal scroll carousels, and stacked layouts
 - **Scroll Reveal Animations** — Intersection Observer-powered fade-up animations with staggered delays
 - **Lightbox Gallery** — Full-screen screenshot viewer with keyboard navigation (← → Esc), prev/next buttons, and backdrop blur
@@ -40,6 +41,7 @@ Built with zero dependencies — just semantic HTML, vanilla CSS, and vanilla Ja
 touchgrass-site/
 ├── index.html                          # Homepage (hero, features, screenshots, download CTA, feedback)
 ├── download.html                       # Download page (EXE & MSI installer cards)
+├── 404.html                            # Custom 404 error page
 ├── robots.txt                          # Crawler directives
 ├── sitemap.xml                         # Sitemap for search engines
 ├── touchgrass_site_prd.md              # Product Requirements Document
@@ -159,7 +161,7 @@ For complete product requirements, architecture, feature planning, and implement
 
 ## 🗺️ Roadmap
 
-- [ ] Add a custom 404 error page
+- [x] ~~Add a custom 404 error page~~
 - [ ] Integrate download analytics (replace console logging)
 - [ ] Add dark mode toggle
 - [ ] Add changelog / release notes page
