@@ -1,4 +1,4 @@
-# TouchGrass — https://touchgrass.app
+# TouchGrass — https://pranayy1.github.io/touchgrass-site
 # Allow all crawlers full access
 
 User-agent: *
@@ -6,4 +6,4 @@ Allow: /
 Disallow:
 
 # Sitemap location
-Sitemap: https://touchgrass.app/sitemap.xml
+Sitemap: https://pranayy1.github.io/touchgrass-site/sitemap.xml
